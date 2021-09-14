@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --head-foot-col: rgba(255, 38, 0, 0.753);
+    --aside-col: rgba(0, 255, 42, 0.801);
+    --nav-col: rgb(106, 149, 212);
+    --font-Mont: 'Montserrat', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 20vh;
+    background-color: var(--head-foot-col);
+    display: flex;
+    align-items: center;
+}
+
+header>h1 {
+    margin: 0 0 0 5%;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70vh;
+}
+
+.main-content>aside {
+    width: 20%;
+    height: 100%;
+    background-color: var(--aside-col);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.main-content>aside>p {
+    width: 90%;
+    height: 100%;
+    font-family: var(--font-Mont);
+    font-size: 22px;
+}
+
+.main-content__center-info {
+    width: 60%;
+    height: 100%;
+}
+
+.main-content__center-info>nav {
+    width: 100%;
+    height: 10%;
+    font-size: 1.8em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    background-color: var(--nav-col);
+}
+
+.main-content__center-info a {
+    transition: 0.5s;
+}
+
+.main-content__center-info a:hover {
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+}
+
+main {
+    width: 100%;
+    height: 90%;
+    background-color: #fff;
+}
+
+main>img {
+    width: 100%;
+    height: 100%;
+}
+
+.main-content__right-info {
+    width: 20%;
+    height: 100%;
+}
+
+.main-content__right-info>aside {
+    width: 100%;
+    height: 90%;
+    background-color: var(--aside-col);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.main-content__right-info>aside>p {
+    width: 90%;
+    height: 100%;
+    font-family: var(--font-Mont);
+    font-size: 20px;
+}
+
+.main-content__right-info>nav {
+    width: 100%;
+    height: 10%;
+    background-color: var(--nav-col);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+    height: 20vh;
+    background-color: var(--head-foot-col);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+footer>h3 {
+    font-family: var(--font-Mont);
+    font-size: 22px;
+    margin-right: 5%;
+}
